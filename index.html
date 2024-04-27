@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body
+    class="font-nunito bg-[--Very-Light-Gray] text-[--Very-Dark-Blue] dark:bg-[--Dark-Blue] dark:text-[--White]"
+  >
+    <nav
+      class="p-8 pt-10 flex justify-between items-center h-16 shadow-md dark:bg-[--Dark-Blue]"
+    >
+      <h2 class="font-bold">Where in the world?</h2>
+      <button id="darkMode" class="inline-flex items-center">
+        <span class="order-2 pl-2">Dark Mode</span>
+        <svg
+          class="w-6 h-6 order-1"
+          xmlns="http://www.w3.org/2000/svg"
+          class="ionicon"
+          viewBox="0 0 512 512"
+        >
+          <path
+            d="M160 136c0-30.62 4.51-61.61 16-88C99.57 81.27 48 159.32 48 248c0 119.29 96.71 216 216 216 88.68 0 166.73-51.57 200-128-26.39 11.49-57.38 16-88 16-119.29 0-216-96.71-216-216z"
+            fill="#fff"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="32"
+          />
+        </svg>
+      </button>
+    </nav>
+    <header class="flex flex-col justify-center mt-8">
+      <div class="static Desktop:flex Desktop:justify-between">
+        <div
+          class="bg-white shadow-sm flex m-4 px-8 items-center dark:bg-[--Dark-Blue]"
+        >
+          <svg
+            class="w-8 h-8 text-[--Dark-Gray]"
+            xmlns="http://www.w3.org/2000/svg"
+            class="ionicon"
+            viewBox="0 0 512 512"
+          >
+            <path
+              d="M221.09 64a157.09 157.09 0 10157.09 157.09A157.1 157.1 0 00221.09 64z"
+              fill="none"
+              stroke="currentColor"
+              stroke-miterlimit="10"
+              stroke-width="32"
+            />
+            <path
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-miterlimit="10"
+              stroke-width="32"
+              d="M338.29 338.29L448 448"
+            />
+          </svg>
+          <input
+            class="border-0 w-full p-5 text-[--Very-Light-Gray] focus:text-[--Dark-Gray] dark:bg-[--Dark-Blue]"
+            type="search"
+            name="search"
+            id="search"
+            placeholder="Search for a country..."
+          />
+        </div>
+        <div
+          class="w-1/2 bg-white shadow-sm flex justify-between m-4 px-8 items-center cursor-pointer dark:bg-[--Dark-Blue]"
+          id="dropdownDelayButton"
+        >
+          <button
+            id="regionss"
+            class="py-5 relative dark:bg-[--Dark-Blue]"
+            data-dropdown-toggle="dropdownDelay"
+            data-dropdown-delay="500"
+            data-dropdown-trigger="hover"
+          >
+            All Regions
+          </button>
+          <svg
+            class="w-6 h-6"
+            xmlns="http://www.w3.org/2000/svg"
+            class="ionicon"
+            viewBox="0 0 512 512"
+          >
+            <path
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="48"
+              d="M112 184l144 144 144-144"
+            />
+          </svg>
+          <div
+            id="dropdownDelay"
+            class="z-10 hidden Desktop:absolute Desktop:top-48 Desktop:right-1 bg-white shadow-lg flex-col m-4 p-5 -mt-1 w-1/2 dark:bg-[--Dark-Blue]"
+          >
+            <h2>
+              <a class="regions py-2 cursor-pointer hover:font-bold" d="all"
+                >All Regions</a
+              >
+            </h2>
+            <h2>
+              <a class="regions py-2 cursor-pointer hover:font-bold" d="Africa"
+                >Africa</a
+              >
+            </h2>
+            <h2>
+              <a d="America" class="regions py-2 cursor-pointer hover:font-bold"
+                >America</a
+              >
+            </h2>
+            <h2>
+              <a d="Asia" class="regions py-2 cursor-pointer hover:font-bold"
+                >Asia</a
+              >
+            </h2>
+            <h2>
+              <a d="Europe" class="regions py-2 cursor-pointer hover:font-bold"
+                >Europe</a
+              >
+            </h2>
+            <h2>
+              <a d="Oceania" class="regions py-2 cursor-pointer hover:font-bold"
+                >Oceania</a
+              >
+            </h2>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main
+      id="mainE"
+      class="grid grid-cols-1 Desktop:grid-cols-4 m-5 gap-4"
+    ></main>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
+
+<!-- <div class="bg-white shadow w-full mt-5">
+  <div>
+    <img
+      class="object-cover w-full"
+      src="https://flagcdn.com/w320/ax.png"
+      alt=""
+    />
+  </div>
+  <div class="p-6 flex flex-col">
+    <h1 class="my-2 pb-2 text-xl font-bold">United State Of America</h1>
+    <h2 class="font-semibold">
+      Population: <span class="font-normal">323.947.000</span>
+    </h2>
+    <h2 class="font-semibold">
+      Region: <span class="font-normal">America</span>
+    </h2>
+    <h2 class="font-semibold">
+      Capital:<span class="font-normal">Washington, DC</span>
+    </h2>
+  </div>
+</div> -->
